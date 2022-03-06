@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #aca9a9;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("./img/fondo.png");
+}
+
+.container-body {
+  width: 100%;
+  height: 100%;
+}
+
+nav .whatsup {
+  background-color: #128c7e;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+nav .whatsup .title {
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+nav .whatsup .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 5rem;
+  padding: 1rem;
+}
+
+nav .camera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  background-color: #128c7e;
+  color: #d4d4d4;
+  text-align: center;
+}
+
+nav .camera .cameicon {
+  width: 4rem;
+}
+
+nav .camera .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 100%;
+  background-color: #128c7e;
+  color: #d4d4d4;
+}
+
+nav .camera .state article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main {
+  width: 100%;
+  height: calc( 100% - 6rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  overflow-y: scroll;
+}
+
+main .chat1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+main .chat1 .face {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+}
+
+main .chat1 .face .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 2;
+}
+
+main .chat1 .face .space small {
+  font-size: 1rem;
+}
+
+main .chat1 .face .material-icons {
+  width: 1.5rem;
+  height: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+main .chat1 .face .vist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+main .chat1 .face .vist small {
+  white-space: nowrap;
+}
+
+main .chat1 .face .vist div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+main .chat1 .face .vist .material-icons {
+  color: gray;
+  font-size: 18px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+main .chat1 .face .vist button {
+  border: none;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  background: #128c7e;
+  color: white;
+  margin-left: 10px;
+}
+
+main .chat1 .face .profile {
+  height: 100%;
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .chat1 .face .profile .image {
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  background-size: cover;
+}
+
+main .chat1 .face .profile .image img {
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+}
+
+main .linea {
+  border-bottom: 3px solid #ffffff;
+}
+
+.title {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  line-height: 0;
+  margin: none;
+  padding: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title .profil {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: none;
+  border-radius: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title .profil img {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.title h3 {
+  margin-left: 1rem;
+}
+
+.icons .material-icons {
+  margin-right: 1rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 3rem;
+}
+
+footer .menssage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 75%;
+  width: 90%;
+  border-radius: 2rem;
+  background-color: #fff;
+  margin-top: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .menssage .art1 {
+  height: 2rem;
+  margin-left: 1rem;
+  padding-top: 0.4rem;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  color: gray;
+}
+
+footer .menssage .art1 input {
+  border: none;
+  margin: none;
+  padding: none;
+  line-height: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  outline: none;
+}
+
+footer .menssage .art2 {
+  padding-top: 0.4rem;
+  margin-right: 1rem;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+footer .par2 {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .par2 .micro {
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #128c7e;
+  color: #fff;
+}
+
+.burbuja1 {
+  background-color: #fff;
+  width: 80%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1em;
+  line-height: 3vh;
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.burbuja1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  margin-left: -30px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 15px solid #fff;
+}
+
+.burbuja2 {
+  background-color: #fff;
+  width: 80%;
+  margin-left: 14rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+  line-height: 3vh;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #E2FDD5;
+}
+/*# sourceMappingURL=style.css.map */

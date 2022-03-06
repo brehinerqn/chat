@@ -1,0 +1,278 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Helvetica, sans-serif
+* ::-webkit-scrollbar
+    width: 10px
+
+* ::-webkit-scrollbar-track
+    border-radius: 10px
+
+* ::-webkit-scrollbar-thumb
+    border-radius: 5px
+    background-color: #aca9a9
+
+* ::-webkit-scrollbar-thumb:hover
+    background-color: gray
+html,body
+    height: 100%
+    margin: 0
+    padding: 0
+    overflow: hidden
+    background-image: url("./img/fondo.png")
+
+.container-body
+    width: 100%
+    height: 100%
+
+nav
+
+    .whatsup
+
+        background-color: #128c7e
+        height: 3rem
+        display: flex
+        flex-flow: row
+        justify-content: space-between
+        color: white
+
+        .title
+            vertical-align: middle
+            display: flex
+            padding: 1rem
+        .icons
+            display: flex
+            line-height: 5rem
+            padding: 1rem
+
+    .camera
+        display: flex
+        flex-flow: row
+        // justify-content: space-between
+        background-color: #128c7e
+        color: #d4d4d4
+        text-align: center
+
+        .cameicon
+            width: 4rem
+
+        .state
+            display: flex
+            flex-flow: row
+            width: 100%
+
+            background-color: #128c7e
+            color: #d4d4d4
+
+            article
+                flex: 1
+
+main
+    width: 100%
+    height: calc( 100% - 6rem )
+    display: flex
+    flex-flow: row
+    overflow-y: scroll
+
+    .chat1
+        display: flex
+        flex-flow: column
+        width: 100%
+        height: 100%
+
+        .face
+            width: 100%
+            display: flex
+            padding: 0.5rem
+
+            .space
+                display: flex
+                flex: 1
+                justify-content: space-between
+                line-height: 2
+                small
+
+                    font-size: 1rem
+
+            .material-icons
+                width: 1.5rem
+                height: 1rem
+                font-size: 0.8rem
+                text-align: center
+            .vist
+                display: flex
+                flex-flow: column
+                small
+                    white-space: nowrap
+                div
+                    display: flex
+                    flex-flow: row
+                .material-icons
+                    color: gray
+                    font-size: 18px
+                    transform: rotateZ(45deg)
+                button
+                    border: none
+                    border-radius: 100%
+                    height: 20px
+                    width: 20px
+                    background: #128c7e
+                    color: white
+                    margin-left: 10px
+            .profile
+
+                height: 100%
+                width: 5rem
+                display: flex
+
+                .image
+                    // border: solid 1px blue
+                    height: 4rem
+                    width: 4rem
+                    border: none
+                    background-size: cover
+                    img
+                        border-radius: 100%
+                        width: 4rem
+                        height: 4rem
+
+    .linea
+        border-bottom: 3px solid #ffffff
+
+.title
+    align-content: center
+    line-height: 0
+    margin: none
+    padding: none
+    display: flex
+    align-items: center
+
+    .profil
+        border: none
+        width: 2rem
+        height: 2rem
+        background-color: none
+        border-radius: 100%
+        align-items: center
+
+        img
+            border-radius: 100%
+            width: 2rem
+            height: 2rem
+    h3
+        margin-left: 1rem
+.icons
+    .material-icons
+        margin-right: 1rem
+
+main
+footer
+    display: flex
+    flex-flow: row
+    height: 3rem
+
+    .menssage
+        display: flex
+        flex-flow: row
+        height: 75%
+        width: 90%
+        border-radius: 2rem
+        background-color: #fff
+        margin-top: 5px
+        justify-content: space-between
+        // border: solid 2px red 
+        
+        .art1
+            height: 2rem            
+            margin-left:  1rem
+            padding-top: 0.4rem
+            width: 95%
+            display: flex
+            flex-flow: row
+            color: gray
+            input
+                border: none
+                margin: none
+                padding: none
+                line-height: 0
+                height: 100%
+                width: 100%
+                // border: solid 2px red
+                font-size: 1.2rem
+                margin-left: 1rem
+                outline: none
+        .art2
+            padding-top: 0.4rem
+            margin-right: 1rem
+            color: gray 
+            display: flex
+            flex-flow: row       
+    .par2
+        // border: 2px solid blue
+        width: 10%
+        display: flex
+        justify-content: center
+        .micro
+            border-radius: 100%
+            // border: 2px solid blue
+            height: 2.5rem
+            width: 2.5rem
+            text-align: center
+            padding-top: 10px
+            background-color: #128c7e
+            color: #fff
+            
+.burbuja1
+    background-color: #fff
+    width: 80%
+    margin-left: 2rem
+    margin-top: 1rem 
+    display: flex
+    flex-flow: row
+    flex-wrap: wrap
+    font-size: 1em
+    line-height: 3vh 
+    position: relative
+    border-radius: 0.5rem 
+    padding: 1rem           
+
+.burbuja1:after
+    content: ""
+    display: block
+    position: absolute
+    top: 5px
+    margin-left: -30px
+    width: 0
+    height: 0
+    border-bottom: 8px solid transparent
+    border-top: 8px solid transparent
+    border-right: 15px solid #fff
+
+
+.burbuja2
+    background-color: #fff
+    width: 80%
+    margin-left: 14rem
+    margin-top: 1rem 
+    display: flex
+    font-size: 1em
+    line-height: 3vh 
+    // position: relative
+    border-radius: 0.5rem 
+    padding: 1rem
+    background-color: #E2FDD5 
+    
+             
+
+// .burbuja2:after
+    content: ""
+    display: block
+    position: absolute
+    top: 5px
+    margin-left: 59.9rem
+    width: 0
+    height: 0
+    border-bottom: 8px solid transparent
+    border-top: 8px solid transparent
+    border-left: 15px solid #E2FDD5   
